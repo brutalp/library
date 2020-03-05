@@ -14,3 +14,11 @@ class LoginView(View):
             html += f'{key}: {value}<br>'
         html += '</html></body>'
         return HttpResponse(html)
+
+
+def check(request):
+    return render(request, 'login_app/check.html')
+
+
+def hello(request):
+    return render(request, 'login_app/hello.html')
