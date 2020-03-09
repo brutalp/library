@@ -41,7 +41,10 @@ class HelloView(View):
         html += '</html></body>'
         return HttpResponse(html)
 
-#
+
+def index(request):
+    return render(request, 'login_app/index.html')
+
 # def check(request):
 #     return render(request, 'login_app/check.html')
 #
