@@ -1,5 +1,4 @@
 {% extends 'login_app/wrapper.html' %}
-
 {% block content %}
     <div class="container">
         <div class="row">
@@ -10,15 +9,14 @@
                     <div class="alert alert-secondary" role="alert">
                         <div class="form-group">
                             <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
                             <label for="lastName">Last Name</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="Ivanov">
+                            <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Ivanov">
                             <label for="firstName">First Name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="Ivan">
+                            <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Ivan">
                             <label for="textMessage">Enter your message</label>
-                            <textarea class="form-control" id="textMessage" rows="3"></textarea>
+                            <textarea class="form-control" name="testMessage" id="textMessage" rows="3"></textarea>
                         </div>
-<!--                        <button type="button" class="btn btn-primary">Send</button>-->
                         <button class="btn btn-primary">Send</button>
                     </div>
                 </form>
