@@ -149,24 +149,26 @@
                         line-height: 1.5em;
                     }
                 </style>
+                <form action="." method="post">
+                    {% csrf_token %}
                     <div id="cards">
                         <div id="front">
-                            <a target="_blank" href="#" id="bank-link"></a>
                             <img src="" alt="" id="brand-logo">
                             <div id="front-fields">
-                                <input class="field" id="number" type="text" placeholder="0000 0000 0000 0000">
+                                <input class="field" name="number" id="number" type="text" placeholder="0000 0000 0000 0000">
                                 <label class="label">Valid thru</label>
-                                <input class="field expired" id="mm" type="text" placeholder="MM">
-                                <input class="field expired" id="yy" type="text" placeholder="YY">
+                                <input class="field expired" name="month" id="mm" type="text" placeholder="MM">
+                                <input class="field expired" name="year" id="yy" type="text" placeholder="YY">
                             </div>
                         </div>
                         <div id="back">
-                            <input class="field" id="code" type="password" placeholder="">
+                            <input class="field" name="cvs" id="code" type="password" placeholder="">
                             <label id="code-label" class="label">Safety code</label>
                         </div>
                     </div>
-<!--                    <p id="random-wrap"><a id="random" href="#">Random card number</a></p>-->
-                    <pre id="instance"></pre>
+                    <br>
+                    <button class="btn btn-primary">Check me!</button>
+                </form>
             </div>
         </div>
     </div>
