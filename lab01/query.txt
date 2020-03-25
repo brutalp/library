@@ -1,0 +1,4 @@
+1. Flight.objects.all().filter(departure_airport__airport_name="Perm", arrival_airport__airport_name="Pylkovo")
+2. Seats.objects.all().filter(aircraft_code__aircraft_code=666999)
+3. Ticket_flight.objects.all().filter(flight_id=1)
+4. Ticket.objects.all().filter(ticket_no__flight_id=1)
