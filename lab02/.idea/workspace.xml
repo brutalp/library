@@ -8,7 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1ZdBdhG9gUJt3k3xC9UWvUEJQs1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -41,9 +41,17 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="366" y="88" key="SettingsEditor" timestamp="1585159411698">
+    <state x="584" y="346" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585566654670">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="366" y="88" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585159411698" />
+    <state x="584" y="346" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1585566654670" />
+    <state x="366" y="88" key="SettingsEditor" timestamp="1585661299099">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="366" y="88" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585661299099" />
+    <state x="404" y="28" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585581248682">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="404" y="28" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1585581248682" />
   </component>
 </project>
