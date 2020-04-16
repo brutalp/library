@@ -223,4 +223,5 @@ class ShopView(View):
                                                         'post_info': POST_INFO,
                                                         'phone_info': PHONE_INFO,
                                                         'email_info': EMAIL_INFO,
+                                                        'products': products,
                                                         })
