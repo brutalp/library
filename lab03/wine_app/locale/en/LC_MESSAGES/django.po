@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-15 23:09+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\templates\wine_app\about.html:15 .\templates\wine_app\index.html:23
+#: .\templates\wine_app\index.html:109 .\templates\wine_app\shop.html:285
+msgid "Welcome"
+msgstr "Welcome"
+
+#: .\templates\wine_app\about.html:16 .\templates\wine_app\navbar.html:31
+msgid "About"
+msgstr "About"
+
+#: .\templates\wine_app\about.html:35
+msgid "HowWeStarted"
+msgstr "How We Started"
+
+#: .\templates\wine_app\about.html:62
+#, fuzzy
+#| msgid "WinesForEveryone"
+msgid "WinesForYouAll"
+msgstr "Wines For Everyone"
+
+#: .\templates\wine_app\about.html:79
+msgid "FreeShipping"
+msgstr "Free Shipping"
+
+#: .\templates\wine_app\about.html:89
+msgid "FreeReturns"
+msgstr "Free Returns"
+
+#: .\templates\wine_app\about.html:99
+msgid "CustomerSupport"
+msgstr "Customer Support"
+
+#: .\templates\wine_app\contact.html:16
+msgid "GetInTouch"
+msgstr "Get In Touch"
+
+#: .\templates\wine_app\contact.html:17 .\templates\wine_app\navbar.html:34
+msgid "Contact"
+msgstr "Contact"
+
+#: .\templates\wine_app\contact.html:30
+msgid "ContactUs"
+msgstr "Contact"
+
+#: .\templates\wine_app\contact.html:36
+msgid "FirstName"
+msgstr "First Name"
+
+#: .\templates\wine_app\contact.html:40
+msgid "LastName"
+msgstr "Last Name"
+
+#: .\templates\wine_app\contact.html:46
+msgid "EmailAddress"
+msgstr "Email Address"
+
+#: .\templates\wine_app\contact.html:50
+msgid "TelNumber"
+msgstr "Tel. Number"
+
+#: .\templates\wine_app\contact.html:56
+msgid "Message"
+msgstr "Message"
+
+#: .\templates\wine_app\contact.html:63
+msgid "SendMessage"
+msgstr "SendMessage"
+
+#: .\templates\wine_app\index.html:15
+msgid "RoyalWine"
+msgstr "Royal Wine"
+
+#: .\templates\wine_app\index.html:16
+msgid "GrapeWine"
+msgstr "Grape Wine"
+
+#: .\templates\wine_app\index.html:24 .\templates\wine_app\index.html:110
+#: .\templates\wine_app\shop.html:286
+msgid "WinesForEveryone"
+msgstr "Wines For Everyone"
+
+#: .\templates\wine_app\index.html:33 .\templates\wine_app\shop.html:17
+msgid "OurProducts"
+msgstr "Our Products"
+
+#: .\templates\wine_app\index.html:34
+msgid "Lorem"
+msgstr "Lorem"
+
+#: .\templates\wine_app\index.html:35 .\templates\wine_app\index.html:147
+msgid "ViewAllProducts"
+msgstr "View All Products"
+
+#: .\templates\wine_app\index.html:56 .\templates\wine_app\index.html:77
+#: .\templates\wine_app\index.html:98 .\templates\wine_app\shop.html:47
+#: .\templates\wine_app\shop.html:75 .\templates\wine_app\shop.html:102
+#: .\templates\wine_app\shop.html:131 .\templates\wine_app\shop.html:159
+#: .\templates\wine_app\shop.html:186 .\templates\wine_app\shop.html:215
+#: .\templates\wine_app\shop.html:243 .\templates\wine_app\shop.html:270
+msgid "AddToCart"
+msgstr "Add to Cart"
+
+#: .\templates\wine_app\index.html:145
+#, fuzzy
+#| msgid "Wines"
+msgid "WinesBlog"
+msgstr "Wines Blog"
+
+#: .\templates\wine_app\index.html:154 .\templates\wine_app\index.html:164
+#: .\templates\wine_app\index.html:174
+msgid "WhatYouNeedToKnowAboutPremiumRosecco"
+msgstr "What You Need To Know About Premium Rosecco"
+
+#: .\templates\wine_app\index.html:157 .\templates\wine_app\index.html:167
+#: .\templates\wine_app\index.html:177
+msgid "News"
+msgstr "News"
+
+#: .\templates\wine_app\navbar.html:30
+msgid "Home"
+msgstr "Home"
+
+#: .\templates\wine_app\navbar.html:32
+msgid "Wines"
+msgstr "Wines"
+
+#: .\templates\wine_app\navbar.html:33
+msgid "Shop"
+msgstr "Shop"

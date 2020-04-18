@@ -1,0 +1,48 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Wines</title>
+        <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Montserrat:400,700|Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'wine_app/fonts/icomoon/style.css' %}">
+        <link rel="stylesheet" href="{% static 'wine_app/css/open-iconic-bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'wine_app/css/jquery-ui.css' %}">
+        <link rel="stylesheet" href="{% static 'wine_app/css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'wine_app/css/owl.theme.default.min.css' %}">
+        <link rel="stylesheet" href="{% static 'wine_app/css/owl.theme.default.min.css' %}">
+        <link rel="stylesheet" href="{% static 'wine_app/css/jquery.fancybox.min.css' %}">
+        <link rel="stylesheet" href="{% static 'wine_app/css/bootstrap-datepicker.css' %}">
+        <link rel="stylesheet" href="{% static 'wine_app/css/bootstrap/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'wine_app/fonts/flaticon/font/flaticon.css' %}">
+        <link rel="stylesheet" href="{% static 'wine_app/css/aos.css' %}">
+        <link media="all" rel="stylesheet" type="text/css" href="{% static 'wine_app/css/jquery.mb.YTPlayer.min.css' %}">
+        <link rel="stylesheet" href="{% static 'wine_app/css/style.css' %}">
+        <link rel="shortcut icon" type="image/png" href="{% static 'wine_app/images/favicon.png' %}">
+    </head>
+    <body>
+
+        {% block content %}
+        {% endblock %}
+        <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ff5e15"/></svg></div>
+        <script src="{% static 'wine_app/js/jquery-3.3.1.min.js' %}"></script>
+        <script src="{% static 'wine_app/js/jquery-migrate-3.0.1.min.js' %}"></script>
+        <script src="{% static 'wine_app/js/jquery-ui.js' %}"></script>
+        <script src="{% static 'wine_app/js/popper.min.js' %}"></script>
+        <script src="{% static 'wine_app/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'wine_app/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'wine_app/js/jquery.stellar.min.js' %}"></script>
+        <script src="{% static 'wine_app/js/jquery.countdown.min.js' %}"></script>
+        <script src="{% static 'wine_app/js/bootstrap-datepicker.min.js' %}"></script>
+        <script src="{% static 'wine_app/js/jquery.easing.1.3.js' %}"></script>
+        <script src="{% static 'wine_app/js/aos.js' %}"></script>
+        <script src="{% static 'wine_app/js/jquery.fancybox.min.js' %}"></script>
+        <script src="{% static 'wine_app/js/jquery.sticky.js' %}"></script>
+        <script src="{% static 'wine_app/js/jquery.mb.YTPlayer.min.js' %}"></script>
+        <script src="{% static 'wine_app/js/main.js' %}"></script>
+    </body>
+</html>

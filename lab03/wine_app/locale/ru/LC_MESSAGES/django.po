@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-15 23:09+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\templates\wine_app\about.html:15 .\templates\wine_app\index.html:23
+#: .\templates\wine_app\index.html:109 .\templates\wine_app\shop.html:285
+msgid "Welcome"
+msgstr "Добро пожаловать"
+
+#: .\templates\wine_app\about.html:16 .\templates\wine_app\navbar.html:31
+msgid "About"
+msgstr "О нас"
+
+#: .\templates\wine_app\about.html:35
+msgid "HowWeStarted"
+msgstr "Как мы начинали"
+
+#: .\templates\wine_app\about.html:62
+msgid "WinesForYouAll"
+msgstr "Вина для всех"
+
+#: .\templates\wine_app\about.html:79
+msgid "FreeShipping"
+msgstr "Бесплатная доставка"
+
+#: .\templates\wine_app\about.html:89
+msgid "FreeReturns"
+msgstr "Бесплатный возврат"
+
+#: .\templates\wine_app\about.html:99
+msgid "CustomerSupport"
+msgstr "Поддержка"
+
+#: .\templates\wine_app\contact.html:16
+msgid "GetInTouch"
+msgstr "Связаться"
+
+#: .\templates\wine_app\contact.html:17 .\templates\wine_app\navbar.html:34
+msgid "Contact"
+msgstr "Написать нам"
+
+#: .\templates\wine_app\contact.html:30
+msgid "ContactUs"
+msgstr "Написать нам"
+
+#: .\templates\wine_app\contact.html:36
+msgid "FirstName"
+msgstr "Имя"
+
+#: .\templates\wine_app\contact.html:40
+msgid "LastName"
+msgstr "Фамилия"
+
+#: .\templates\wine_app\contact.html:46
+msgid "EmailAddress"
+msgstr "Почта"
+
+#: .\templates\wine_app\contact.html:50
+msgid "TelNumber"
+msgstr "Номер телефона"
+
+#: .\templates\wine_app\contact.html:56
+msgid "Message"
+msgstr "Сообщение"
+
+#: .\templates\wine_app\contact.html:63
+msgid "SendMessage"
+msgstr "Отправить"
+
+#: .\templates\wine_app\index.html:15
+msgid "RoyalWine"
+msgstr "Королевское вино"
+
+#: .\templates\wine_app\index.html:16
+msgid "GrapeWine"
+msgstr "Вино"
+
+#: .\templates\wine_app\index.html:24 .\templates\wine_app\index.html:110
+#: .\templates\wine_app\shop.html:286
+msgid "WinesForEveryone"
+msgstr "Вина для всех"
+
+#: .\templates\wine_app\index.html:33 .\templates\wine_app\shop.html:17
+msgid "OurProducts"
+msgstr "Наша продукция"
+
+#: .\templates\wine_app\index.html:34
+msgid "Lorem"
+msgstr "Lorem"
+
+#: .\templates\wine_app\index.html:35 .\templates\wine_app\index.html:147
+msgid "ViewAllProducts"
+msgstr "Посмотреть всю продукцию"
+
+#: .\templates\wine_app\index.html:56 .\templates\wine_app\index.html:77
+#: .\templates\wine_app\index.html:98 .\templates\wine_app\shop.html:47
+#: .\templates\wine_app\shop.html:75 .\templates\wine_app\shop.html:102
+#: .\templates\wine_app\shop.html:131 .\templates\wine_app\shop.html:159
+#: .\templates\wine_app\shop.html:186 .\templates\wine_app\shop.html:215
+#: .\templates\wine_app\shop.html:243 .\templates\wine_app\shop.html:270
+msgid "AddToCart"
+msgstr "Добавить в корзину"
+
+#: .\templates\wine_app\index.html:145
+msgid "WinesBlog"
+msgstr "Блог о вине"
+
+#: .\templates\wine_app\index.html:154 .\templates\wine_app\index.html:164
+#: .\templates\wine_app\index.html:174
+msgid "WhatYouNeedToKnowAboutPremiumRosecco"
+msgstr "Всё что надо знать о Premium Rosecco"
+
+#: .\templates\wine_app\index.html:157 .\templates\wine_app\index.html:167
+#: .\templates\wine_app\index.html:177
+msgid "News"
+msgstr "Новости"
+
+#: .\templates\wine_app\navbar.html:30
+msgid "Home"
+msgstr "На главную"
+
+#: .\templates\wine_app\navbar.html:32
+msgid "Wines"
+msgstr "Вина"
+
+#: .\templates\wine_app\navbar.html:33
+msgid "Shop"
+msgstr "Магазин"

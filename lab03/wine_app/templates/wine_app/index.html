@@ -1,0 +1,140 @@
+{% extends 'wine_app/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div class="site-wrap">
+
+        {% include 'wine_app/navbar.html' %}
+
+        <div class="owl-carousel hero-slide owl-style">
+            <div class="intro-section container" style="background-image: url({% static 'wine_app/images/hero_1.jpg' %});">
+                <div class="row justify-content-center text-center align-items-center">
+                    <div class="col-md-8">
+                        <span class="sub-title">{% trans 'RoyalWine' %}</span>
+                        <h1>{% trans 'GrapeWine' %}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-section container" style="background-image: url({% static 'wine_app/images/hero_2.jpg' %});">
+                <div class="row justify-content-center text-center align-items-center">
+                    <div class="col-md-8">
+                        <span class="sub-title">{% trans 'Welcome' %}</span>
+                        <h1>{% trans 'WinesForEveryone' %}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-section mt-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 section-title text-center mb-5">
+                        <h2 class="d-block">{% trans 'OurProducts' %}</h2>
+                        <p>{% trans 'Lorem' %}Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, perspiciatis!</p>
+                        <p><a href="#">{% trans 'ViewAllProducts' %}<span class="icon-long-arrow-right"></span></a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    {% for wine in wines %}
+                        <div class="col-lg-4 mb-5 col-md-6">
+                            <div class="wine_v_1 text-center pb-4">
+                                <a href="shop-single.html" class="thumbnail d-block mb-4"><img src="{{ wine.img }}" alt="Image" class="img-fluid"></a>
+                                <div>
+                                    <h3 class="heading mb-1"><a href="#">{{ wine.title }}</a></h3>
+                                    <span class="price">{{ wine.price }}</span>
+                                </div>
+                                <div class="wine-actions">
+                                    <h3 class="heading-2"><a href="#">{{ wine.title }}</a></h3>
+                                    {% if wine.sale_price %}
+                                        <span class="price d-block"><del>{{ wine.sale_price }}</del> {{ wine.price }}</span>
+                                    {% else %}
+                                        <span class="price d-block">{{ wine.price }}</span>
+                                    {% endif %}
+                                    <div class="rating">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star-o"></span>
+                                    </div>
+                                    <a href="cart.html" class="btn add"><span class="icon-shopping-bag mr-3"></span>{% trans 'AddToCart' %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="hero-2" style="background-image: url({% static 'wine_app/images/hero_2.jpg' %});">
+            <div class="container">
+                <div class="row justify-content-center text-center align-items-center">
+                    <div class="col-md-8">
+                        <span class="sub-title">{% trans 'Welcome' %}</span>
+                        <h2>{% trans 'WinesForEveryone' %}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-section bg-light">
+            <div class="container">
+                <div class="owl-carousel owl-slide-3 owl-slide">
+                    {% for person in people %}
+                        <blockquote class="testimony">
+                            <img src="{{ person.img }}" alt="Image">
+                            <p>{{ person.text }}</p>
+                            <p class="small text-primary">{{ person.name }}</p>
+                        </blockquote>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="site-section bg-light">
+            <div class="container">
+
+                <div class="row mb-5">
+                    <div class="col-12 section-title text-center mb-5">
+                        <h2 class="d-block">{% trans 'WinesBlog' %}</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, perspiciatis!</p>
+                        <p><a href="#">{% trans 'ViewAllProducts' %}<span class="icon-long-arrow-right"></span></a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0 col-md-6">
+                        <div class="post-entry-1">
+                            <a href="post-single.html"><img src="{% static 'wine_app/images/img_1.jpg' %}" alt="Image" class="img-fluid"></a>
+                            <h2><a href="blog-single.html">{% trans 'WhatYouNeedToKnowAboutPremiumRosecco' %}</a></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi temporibus praesentium neque, voluptatum quam quibusdam.</p>
+                            <div class="post-meta">
+                                <span class="d-block"><a href="#">Dave Rogers</a> in <a href="#">{% trans 'News' %}</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0 col-md-6">
+                        <div class="post-entry-1">
+                            <a href="post-single.html"><img src="{% static 'wine_app/images/img_2.jpg' %}" alt="Image" class="img-fluid"></a>
+                            <h2><a href="blog-single.html">{% trans 'WhatYouNeedToKnowAboutPremiumRosecco' %}</a></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi temporibus praesentium neque, voluptatum quam quibusdam.</p>
+                            <div class="post-meta">
+                                <span class="d-block"><a href="#">Dave Rogers</a> in <a href="#">{% trans 'News' %}</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0 col-md-6">
+                        <div class="post-entry-1">
+                            <a href="post-single.html"><img src="{% static 'wine_app/images/img_3.jpg' %}" alt="Image" class="img-fluid"></a>
+                            <h2><a href="blog-single.html">{% trans 'WhatYouNeedToKnowAboutPremiumRosecco' %}</a></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi temporibus praesentium neque, voluptatum quam quibusdam.</p>
+                            <div class="post-meta">
+                                <span class="d-block"><a href="#">Dave Rogers</a> in <a href="#">{% trans 'News' %}</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+</body>
+{% endblock %}
