@@ -38,8 +38,9 @@ wine_count = 0
 class ShopView(View):
 
     def get(self, request, page_id=1):
-        wines_list = Wines.objects.all()
+        
         if not request.is_ajax():
+            wines_list = Wines.objects.all()
             paginator = Paginator(wines_list, 3)
             try:
                 wines = paginator.page(page_id)
@@ -48,10 +49,9 @@ class ShopView(View):
                 return redirect(reverse('shop'))
             return render(request, 'wine_app/shop.html', {'wines': wines})
         else:
-            print('###############################################################')
-            print(json.dumps({'wines': wines_list}))
-            print('###############################################################')
-            return HttpResponse(json.dumps({'wines': wines_list}), content_type='application/json')
+            wines_list = [wine for wine in Wines.objects.values()]
+            wines_list = json.dumps({'wines': wines_list})
+            return HttpResponse(wines_list, content_type='application/json')
 
     # def post(self, request):
     #     global wine_count
