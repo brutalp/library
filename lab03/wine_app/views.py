@@ -49,8 +49,17 @@ class ShopView(View):
                 return redirect(reverse('shop'))
             return render(request, 'wine_app/shop.html', {'wines': wines})
         else:
+
             wines_list = [wine for wine in Wines.objects.values()]
             wines_list = json.dumps({'wines': wines_list})
+
+            paginator = Paginator(wines_list, 3)
+            try:
+                wines = paginator.page(page_id)
+                wines.num_pages_tuple = tuple(range(paginator.num_pages))
+            except:
+                return redirect(reverse('shop'))
+
             return HttpResponse(wines_list, content_type='application/json')
 
     # def post(self, request):

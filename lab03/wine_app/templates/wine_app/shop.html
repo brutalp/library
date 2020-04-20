@@ -21,7 +21,36 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, perspiciatis!</p>
               </div>
             </div>
-            <div id="wine-list"></div>
+              <div id="wine-list"></div>
+<!--            <div class="row">-->
+<!--                {% for wine in wines %}-->
+<!--                    <div class="col-lg-4 mb-5 col-md-6">-->
+<!--                        <div class="wine_v_1 text-center pb-4">-->
+<!--                            <a href="shop-single.html" class="thumbnail d-block mb-4"><img src="{{ wine.img }}" alt="Image" class="img-fluid"></a>-->
+<!--                            <div>-->
+<!--                                <h3 class="heading mb-1"><a href="#">{{ wine.title }}</a></h3>-->
+<!--                                <span class="price">{{ wine.price }}</span>-->
+<!--                            </div>-->
+<!--                            <div class="wine-actions">-->
+<!--                                <h3 class="heading-2"><a href="#">{{ wine.title }}</a></h3>-->
+<!--                                {% if wine.sale_price != 0 %}-->
+<!--                                    <span class="price d-block"><del>{{ wine.sale_price }}</del> {{ wine.price }}</span>-->
+<!--                                {% else %}-->
+<!--                                    <span class="price d-block">{{ wine.price }}</span>-->
+<!--                                {% endif %}-->
+<!--                                <div class="rating">-->
+<!--                                    <span class="icon-star"></span>-->
+<!--                                    <span class="icon-star"></span>-->
+<!--                                    <span class="icon-star"></span>-->
+<!--                                    <span class="icon-star"></span>-->
+<!--                                    <span class="icon-star-o"></span>-->
+<!--                                </div>-->
+<!--                                <a href="cart.html" class="btn add"><span class="icon-shopping-bag mr-3"></span>{% trans 'AddToCart' %}</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                {% endfor %}-->
+<!--            </div>-->
             <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-center">
                     {% if wines.has_previous %}

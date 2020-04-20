@@ -1,24 +1,3 @@
-<script>
-    import { onMount, onDestroy } from 'svelte';
-    import Cookies from 'js-cookie/src/js.cookie.js'
-	const CSRF_TOKEN = Cookies.get('csrftoken');
-	const SHOP_URL = getRef('shop-ref');
-
-    let wines = [
-    ];
-
-    function getRef(id) {return document.getElementById(id).href;};
-    onMount(async () => {
-        const response = await fetch(SHOP_URL, {
-                                        headers: {
-                                            'Accept': 'application/json, text-plain, */*',
-                                            'X-Requested-With': 'XMLHttpRequest',
-                                        }, });
-        let wines_json = await response.json();
-        wines = wines_json['wines'];
-    });
-</script>
-
 <main>
     <div class="row">
         {#each wines as item}
@@ -44,8 +23,67 @@
                 </div>
             </div>
         {/each}
+        <ul class="pagination">
+            {#each winePages as page}
+                <li>
+                    <button on:click="{() => changePage(page)}">
+                        {page}
+                    </button>
+                </li>
+            {/each}
+        </ul>
     </div>
 </main>
+
+<script>
+    import { onMount, onDestroy } from 'svelte';
+    import Cookies from 'js-cookie/src/js.cookie.js'
+	const CSRF_TOKEN = Cookies.get('csrftoken');
+	const SHOP_URL = getRef('shop-ref');
+
+    let wines = [];
+    let totalPages = null;
+    let currentPage = 1;
+    let winePages = [];
+
+    function createPagesArray(total){
+        let arr = []
+        for(let i = 1; i <= total; i++){
+            arr.push(i)
+        }
+        return arr
+    }
+
+    function getTotalPages(length){
+        if (length % 3 == 0){
+            return length / 3
+        } else {
+            return length / 3 + 1
+        }
+    }
+
+    function changePage(page){
+        fetch(SHOP_URL + page).then(res => {
+            return res.json()
+        }).then(result => {
+            posts = result
+            currentPage = page
+        })
+    }
+
+    function getRef(id) {return document.getElementById(id).href;};
+    onMount(async () => {
+        const response = await fetch(SHOP_URL, {
+                                        headers: {
+                                            'Accept': 'application/json, text-plain, */*',
+                                            'X-Requested-With': 'XMLHttpRequest',
+                                        }, });
+        let wines_json = await response.json();
+        wines = wines_json['wines'];
+        totalPages = getTotalPages(wines.length)
+        winePages = createPagesArray(totalPages)
+    });
+</script>
 
 <style>
 
