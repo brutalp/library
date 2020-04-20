@@ -1,6 +1,7 @@
 <main>
     <div class="row">
-        {#each wines as item}
+
+        {#each winesCut as item}
             <div class="col-lg-4 mb-5 col-md-6">
                 <div class="wine_v_1 text-center pb-4">
                     <a href="shop-single.html" class="thumbnail d-block mb-4"><img src="{ item.img }" alt="Image" class="img-fluid"></a>
@@ -23,15 +24,17 @@
                 </div>
             </div>
         {/each}
+
         <ul class="pagination">
             {#each winePages as page}
                 <li>
-                    <button on:click="{() => changePage(page)}">
+                    <button on:click="{() => sliceForPagination(page, wines)}">
                         {page}
                     </button>
                 </li>
             {/each}
         </ul>
+
     </div>
 </main>
 
@@ -43,8 +46,10 @@
 
     let wines = [];
     let totalPages = null;
+    let page = null;
     let currentPage = 1;
     let winePages = [];
+    let winesCut = [];
 
     function createPagesArray(total){
         let arr = []
@@ -62,13 +67,19 @@
         }
     }
 
-    function changePage(page){
-        fetch(SHOP_URL + page).then(res => {
-            return res.json()
-        }).then(result => {
-            posts = result
-            currentPage = page
-        })
+    function sliceForPagination(page, wines){
+        console.log(page)
+        if (page == 1){
+           winesCut = wines.slice(0, 3)
+        } else if (page == 2){
+            winesCut = wines.slice(3, 6)
+        } else if (page == 3){
+            winesCut = wines.slice(7, 10)
+        } else {
+            console.log('при инициализации я залез сюда')
+            winesCut = wines.slice(0, 3)
+        }
+        return winesCut
     }
 
     function getRef(id) {return document.getElementById(id).href;};
@@ -80,9 +91,11 @@
                                         }, });
         let wines_json = await response.json();
         wines = wines_json['wines'];
-        totalPages = getTotalPages(wines.length)
-        winePages = createPagesArray(totalPages)
+        totalPages = getTotalPages(wines.length);
+        winePages = createPagesArray(totalPages);
+        sliceForPagination(page, wines);
     });
+
 </script>
 
 <style>
