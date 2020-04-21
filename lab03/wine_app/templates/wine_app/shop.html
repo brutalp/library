@@ -51,23 +51,23 @@
 <!--                    </div>-->
 <!--                {% endfor %}-->
 <!--            </div>-->
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center">
-                    {% if wines.has_previous %}
-                        <li class="page-item"><a class="page-link" href="{% url 'shop' %}{{ wines.previous_page_number }}">Previous</a></li>
-                    {% endif %}
-                    {% for _ in wines.num_pages_tuple %}
-                        {% if forloop.counter != wines.number %}
-                            <li class="page-item"><a class="page-link" href="{% url 'shop' %}{{forloop.counter}}">{{ forloop.counter }}</a></li>
-                        {% else %}
-                            <li class="page-item active"><span class="page-link">{{ forloop.counter }}</span></li>
-                        {% endif %}
-                    {% endfor %}
-                    {% if wines.has_next %}
-                        <li class="page-item"><a class="page-link" href="{% url 'shop' %}{{ wines.next_page_number }}">Next</a></li>
-                    {% endif %}
-                </ul>
-            </nav>
+<!--            <nav aria-label="Page navigation example">-->
+<!--                <ul class="pagination justify-content-center">-->
+<!--                    {% if wines.has_previous %}-->
+<!--                        <li class="page-item"><a class="page-link" href="{% url 'shop' %}{{ wines.previous_page_number }}">Previous</a></li>-->
+<!--                    {% endif %}-->
+<!--                    {% for _ in wines.num_pages_tuple %}-->
+<!--                        {% if forloop.counter != wines.number %}-->
+<!--                            <li class="page-item"><a class="page-link" href="{% url 'shop' %}{{forloop.counter}}">{{ forloop.counter }}</a></li>-->
+<!--                        {% else %}-->
+<!--                            <li class="page-item active"><span class="page-link">{{ forloop.counter }}</span></li>-->
+<!--                        {% endif %}-->
+<!--                    {% endfor %}-->
+<!--                    {% if wines.has_next %}-->
+<!--                        <li class="page-item"><a class="page-link" href="{% url 'shop' %}{{ wines.next_page_number }}">Next</a></li>-->
+<!--                    {% endif %}-->
+<!--                </ul>-->
+<!--            </nav>-->
           </div>
         </div>
 
